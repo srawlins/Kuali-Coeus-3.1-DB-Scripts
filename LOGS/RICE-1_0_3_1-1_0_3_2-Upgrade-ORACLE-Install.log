@@ -1,0 +1,18 @@
+SQL> @RICE-1_0_3-1_0_4/update_final_oracle.sql
+
+Table altered.
+
+
+1 row deleted.
+
+
+1 row created.
+
+
+Table altered.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> exit;

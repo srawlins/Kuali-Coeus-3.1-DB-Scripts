@@ -1,0 +1,5 @@
+SQL> commit;
+
+Commit complete.
+
+SQL> exit

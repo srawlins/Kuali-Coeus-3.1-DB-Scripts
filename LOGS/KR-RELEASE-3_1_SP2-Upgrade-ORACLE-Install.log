@@ -1,0 +1,1389 @@
+SQL> @ORACLE/DML/KR_DML_BS1_KRIM_ID_CLEAN.sql
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+UPDATE KRIM_ROLE_MBR_T SET ROLE_MBR_ID = KRIM_ROLE_MBR_ID_BS_S.NEXTVAL WHERE ROLE_MBR_ID = (SELECT ROLE_MBR_ID FROM KRIM_ROLE_MBR_T WHERE ROLE_ID = (SELECT ROLE_ID FROM KRIM_ROLE_T WHERE ROLE_NM = 'IRBApprover' AND NMSPC_CD = 'KC-WKFLW') AND MBR_ID = (SELECT ROLE_ID FROM KRIM_ROLE_T WHERE ROLE_NM = 'ProtocolApprover' AND NMSPC_CD = 'KC-PROTOCOL'))
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KRAOWNER.KRIM_ROLE_MBR_TP1) violated 
+
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+UPDATE KRIM_ROLE_MBR_T SET ROLE_MBR_ID = KRIM_ROLE_MBR_ID_BS_S.NEXTVAL WHERE ROLE_MBR_ID = (SELECT ROLE_MBR_ID FROM KRIM_ROLE_MBR_T WHERE ROLE_ID = (SELECT ROLE_ID FROM KRIM_ROLE_T WHERE ROLE_NM = 'IRBApprover' AND NMSPC_CD = 'KC-WKFLW') AND MBR_ID = (SELECT ROLE_ID FROM KRIM_ROLE_T WHERE ROLE_NM = 'IRB Administrator' AND NMSPC_CD = 'KC-UNT'))
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KRAOWNER.KRIM_ROLE_MBR_TP1) violated 
+
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS2_KRIM_ID_CLEAN.sql
+
+Table altered.
+
+
+Table altered.
+
+
+   NEXTVAL                                                                      
+----------                                                                      
+      1231                                                                      
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+   NEXTVAL                                                                      
+----------                                                                      
+      1232                                                                      
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+   NEXTVAL                                                                      
+----------                                                                      
+      1233                                                                      
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+   NEXTVAL                                                                      
+----------                                                                      
+      1234                                                                      
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+   NEXTVAL                                                                      
+----------                                                                      
+      1235                                                                      
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+   NEXTVAL                                                                      
+----------                                                                      
+      1236                                                                      
+
+
+2 rows updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+   NEXTVAL                                                                      
+----------                                                                      
+      1237                                                                      
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+Table altered.
+
+
+   NEXTVAL                                                                      
+----------                                                                      
+      1215                                                                      
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+   NEXTVAL                                                                      
+----------                                                                      
+      1216                                                                      
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+   NEXTVAL                                                                      
+----------                                                                      
+      1217                                                                      
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+   NEXTVAL                                                                      
+----------                                                                      
+      1218                                                                      
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+   NEXTVAL                                                                      
+----------                                                                      
+      1219                                                                      
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+UPDATE KRIM_ROLE_PERM_T SET ROLE_PERM_ID = KRIM_ROLE_PERM_ID_BS_S.NEXTVAL WHERE ROLE_PERM_ID = ( SELECT ROLE_PERM_ID FROM KRIM_ROLE_PERM_T WHERE ROLE_ID = (SELECT ROLE_ID FROM KRIM_ROLE_T WHERE ROLE_NM = 'Unit Administrator' AND NMSPC_CD = 'KC-WKFLW') AND PERM_ID = (SELECT PERM_ID FROM KRIM_PERM_T WHERE NM = 'Open Institutional Proposal' AND NMSPC_CD = 'KC-IP'))
+                                                                                                 *
+ERROR at line 1:
+ORA-01427: single-row subquery returns more than one row 
+
+
+UPDATE KRIM_ROLE_PERM_T SET ROLE_PERM_ID = KRIM_ROLE_PERM_ID_BS_S.NEXTVAL WHERE ROLE_PERM_ID = ( SELECT ROLE_PERM_ID FROM KRIM_ROLE_PERM_T WHERE ROLE_ID = (SELECT ROLE_ID FROM KRIM_ROLE_T WHERE ROLE_NM = 'Unit Administrator' AND NMSPC_CD = 'KC-WKFLW') AND PERM_ID = (SELECT PERM_ID FROM KRIM_PERM_T WHERE NM = 'Open Institutional Proposal' AND NMSPC_CD = 'KC-IP'))
+                                                                                                 *
+ERROR at line 1:
+ORA-01427: single-row subquery returns more than one row 
+
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+0 rows updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+0 rows updated.
+
+
+Commit complete.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+SQL> @ORACLE/DML/KR_DML_BS3_KRIM_PERM_T.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+insert into krim_perm_t values (KRIM_PERM_ID_BS_S.nextval, sys_guid(), 1, '10008', 'KC-T', 'View Time And Money Document', 'View a Time and Money Document', 'Y')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (KRAOWNER.KRIM_PERM_TR1) violated - parent key 
+not found 
+
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS4_KRIM_PERM_ATTR_DATA_T.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS4_KRIM_ROLE_T.sql
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS5_KRIM_ROLE_PERM_T.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS7_KREW_DOC_HDR_T.sql
+INSERT INTO KREW_DOC_HDR_T (DOC_HDR_ID,DOC_TYP_ID,DOC_HDR_STAT_CD,RTE_LVL,STAT_MDFN_DT,CRTE_DT,APRV_DT,FNL_DT,RTE_STAT_MDFN_DT,TTL,DOC_VER_NBR,INITR_PRNCPL_ID,VER_NBR,RTE_PRNCPL_ID,OBJ_ID)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KRAOWNER.KREW_DOC_HDR_TP1) violated 
+
+
+INSERT INTO KREW_DOC_HDR_T (DOC_HDR_ID,DOC_TYP_ID,DOC_HDR_STAT_CD,RTE_LVL,STAT_MDFN_DT,CRTE_DT,APRV_DT,FNL_DT,RTE_STAT_MDFN_DT,TTL,DOC_VER_NBR,INITR_PRNCPL_ID,VER_NBR,RTE_PRNCPL_ID,OBJ_ID)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KRAOWNER.KREW_DOC_HDR_TP1) violated 
+
+
+
+1 row created.
+
+INSERT INTO KREW_DOC_HDR_T (DOC_HDR_ID,DOC_TYP_ID,DOC_HDR_STAT_CD,RTE_LVL,STAT_MDFN_DT,CRTE_DT,APRV_DT,FNL_DT,RTE_STAT_MDFN_DT,TTL,DOC_VER_NBR,INITR_PRNCPL_ID,VER_NBR,RTE_PRNCPL_ID,OBJ_ID)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KRAOWNER.KREW_DOC_HDR_TP1) violated 
+
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS7_KRNS_PARM_T.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row updated.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS8_KREW_ACTN_TKN_T.sql
+  VALUES (KREW_ACTN_TKN_S.NEXTVAL,(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'NSF s2s form supporting questions'),'10000000001','S',TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),1,1,1)
+                                          *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_TKN_T"."DOC_HDR_ID") 
+
+
+  VALUES (KREW_ACTN_TKN_S.NEXTVAL,(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'NSF s2s form supporting questions'),'10000000001','C',TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),1,1,1)
+                                          *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_TKN_T"."DOC_HDR_ID") 
+
+
+  VALUES (KREW_ACTN_TKN_S.NEXTVAL,(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-0 & 1-1'),'10000000001','S',TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),1,1,1)
+                                          *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_TKN_T"."DOC_HDR_ID") 
+
+
+  VALUES (KREW_ACTN_TKN_S.NEXTVAL,(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-0 & 1-1'),'10000000001','C',TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),1,1,1)
+                                          *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_TKN_T"."DOC_HDR_ID") 
+
+
+
+1 row created.
+
+
+1 row created.
+
+  VALUES (KREW_ACTN_TKN_S.NEXTVAL,(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-2'),'10000000001','S',TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),1,1,1)
+                                          *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_TKN_T"."DOC_HDR_ID") 
+
+
+  VALUES (KREW_ACTN_TKN_S.NEXTVAL,(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-2'),'10000000001','C',TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),1,1,1)
+                                          *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_TKN_T"."DOC_HDR_ID") 
+
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS8_KREW_DOC_HDR_CNTNT_T.sql
+  VALUES (EMPTY_CLOB(),(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'NSF s2s form supporting questions'))
+                               *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into 
+("KRAOWNER"."KREW_DOC_HDR_CNTNT_T"."DOC_HDR_ID") 
+
+
+DECLARE    data CLOB; buffer VARCHAR2(32000);
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at line 3 
+
+
+  VALUES (EMPTY_CLOB(),(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-0 & 1-1'))
+                               *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into 
+("KRAOWNER"."KREW_DOC_HDR_CNTNT_T"."DOC_HDR_ID") 
+
+
+DECLARE    data CLOB; buffer VARCHAR2(32000);
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at line 3 
+
+
+
+1 row created.
+
+
+PL/SQL procedure successfully completed.
+
+  VALUES (EMPTY_CLOB(),(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-2'))
+                               *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into 
+("KRAOWNER"."KREW_DOC_HDR_CNTNT_T"."DOC_HDR_ID") 
+
+
+DECLARE    data CLOB; buffer VARCHAR2(32000);
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at line 3 
+
+
+SQL> @ORACLE/DML/KR_DML_BS8_KREW_RTE_NODE_INSTN_T.sql
+DECLARE brch_id NUMBER;
+*
+ERROR at line 1:
+ORA-01400: cannot insert NULL into 
+("KRAOWNER"."KREW_RTE_NODE_INSTN_T"."DOC_HDR_ID") 
+ORA-06512: at line 6 
+
+
+  VALUES ((SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'NSF s2s form supporting questions'),KREW_RTE_NODE_S.CURRVAL)
+                  *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into 
+("KRAOWNER"."KREW_INIT_RTE_NODE_INSTN_T"."DOC_HDR_ID") 
+
+
+DECLARE brch_id NUMBER;
+*
+ERROR at line 1:
+ORA-01400: cannot insert NULL into 
+("KRAOWNER"."KREW_RTE_NODE_INSTN_T"."DOC_HDR_ID") 
+ORA-06512: at line 6 
+
+
+  VALUES ((SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-0 & 1-1'),KREW_RTE_NODE_S.CURRVAL)
+                  *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into 
+("KRAOWNER"."KREW_INIT_RTE_NODE_INSTN_T"."DOC_HDR_ID") 
+
+
+
+PL/SQL procedure successfully completed.
+
+
+1 row created.
+
+DECLARE brch_id NUMBER;
+*
+ERROR at line 1:
+ORA-01400: cannot insert NULL into 
+("KRAOWNER"."KREW_RTE_NODE_INSTN_T"."DOC_HDR_ID") 
+ORA-06512: at line 6 
+
+
+  VALUES ((SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-2'),KREW_RTE_NODE_S.CURRVAL)
+                  *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into 
+("KRAOWNER"."KREW_INIT_RTE_NODE_INSTN_T"."DOC_HDR_ID") 
+
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS9_KREW_ACTN_RQST_T.sql
+  VALUES (KREW_ACTN_RQST_S.NEXTVAL,'C',(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'NSF s2s form supporting questions'),'D',-3,'10000000001','U',0,0,(SELECT RTE_NODE_INSTN_ID FROM KREW_RTE_NODE_INSTN_T WHERE DOC_HDR_ID = (SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'NSF s2s form supporting questions')),(SELECT ACTN_TKN_ID FROM KREW_ACTN_TKN_T WHERE DOC_HDR_ID = (SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'NSF s2s form supporting questions') AND ACTN_CD = 'C'),1,TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),'Initiator needs to complete document.',1,'F',1,0)
+                                               *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_RQST_T"."DOC_HDR_ID") 
+
+
+  VALUES (KREW_ACTN_RQST_S.NEXTVAL,'C',(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-0 & 1-1'),'D',-3,'10000000001','U',0,0,(SELECT RTE_NODE_INSTN_ID FROM KREW_RTE_NODE_INSTN_T WHERE DOC_HDR_ID = (SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-0 & 1-1')),(SELECT ACTN_TKN_ID FROM KREW_ACTN_TKN_T WHERE DOC_HDR_ID = (SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-0 & 1-1') AND ACTN_CD = 'C'),1,TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),'Initiator needs to complete document.',1,'F',1,0)
+                                               *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_RQST_T"."DOC_HDR_ID") 
+
+
+
+1 row created.
+
+  VALUES (KREW_ACTN_RQST_S.NEXTVAL,'C',(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-2'),'D',-3,'10000000001','U',0,0,(SELECT RTE_NODE_INSTN_ID FROM KREW_RTE_NODE_INSTN_T WHERE DOC_HDR_ID = (SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-2')),(SELECT ACTN_TKN_ID FROM KREW_ACTN_TKN_T WHERE DOC_HDR_ID = (SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-2') AND ACTN_CD = 'C'),1,TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),'Initiator needs to complete document.',1,'F',1,0)
+                                               *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_RQST_T"."DOC_HDR_ID") 
+
+
+
+Commit complete.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> exit;

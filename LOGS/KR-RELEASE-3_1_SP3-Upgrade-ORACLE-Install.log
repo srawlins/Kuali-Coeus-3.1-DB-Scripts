@@ -1,0 +1,190 @@
+SQL> @ORACLE/DML/KR_DML_BS1_KRIM_PERM_T.sql
+
+1 row created.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS1_KRNS_PARM_T.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row deleted.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS2_KRIM_PERM_ATTR_DATA_T.sql
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS2_KRIM_ROLE_T.sql
+
+1 row created.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS3_KRIM_ROLE_PERM_T.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+0 rows deleted.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS4_KRIM_GRP_T.sql
+
+1 row created.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS5_KREW_DOC_HDR_T.sql
+INSERT INTO KREW_DOC_HDR_T (DOC_HDR_ID,DOC_TYP_ID,DOC_HDR_STAT_CD,RTE_LVL,STAT_MDFN_DT,CRTE_DT,APRV_DT,FNL_DT,RTE_STAT_MDFN_DT,TTL,DOC_VER_NBR,INITR_PRNCPL_ID,VER_NBR,RTE_PRNCPL_ID,OBJ_ID)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KRAOWNER.KREW_DOC_HDR_TP1) violated 
+
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS5_KRNS_PARM_T.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS6_KREW_ACTN_TKN_T.sql
+  VALUES (KREW_ACTN_TKN_S.NEXTVAL,(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'Proposal Person Certification'),'10000000001','S',TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),1,1,1)
+                                          *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_TKN_T"."DOC_HDR_ID") 
+
+
+  VALUES (KREW_ACTN_TKN_S.NEXTVAL,(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'Proposal Person Certification'),'10000000001','C',TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),1,1,1)
+                                          *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_TKN_T"."DOC_HDR_ID") 
+
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS6_KREW_DOC_HDR_CNTNT_T.sql
+  VALUES (EMPTY_CLOB(),(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'Proposal Person Certification'))
+                               *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into 
+("KRAOWNER"."KREW_DOC_HDR_CNTNT_T"."DOC_HDR_ID") 
+
+
+DECLARE    data CLOB; buffer VARCHAR2(32000);
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at line 3 
+
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS6_KREW_RTE_NODE_INSTN_T.sql
+DECLARE brch_id NUMBER;
+*
+ERROR at line 1:
+ORA-01400: cannot insert NULL into 
+("KRAOWNER"."KREW_RTE_NODE_INSTN_T"."DOC_HDR_ID") 
+ORA-06512: at line 6 
+
+
+  VALUES ((SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'Proposal Person Certification'),KREW_RTE_NODE_S.CURRVAL)
+                  *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into 
+("KRAOWNER"."KREW_INIT_RTE_NODE_INSTN_T"."DOC_HDR_ID") 
+
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS7_KREN_CHNL_PRODCR_T.sql
+
+PL/SQL procedure successfully completed.
+
+SQL> @ORACLE/DML/KR_DML_BS7_KREW_ACTN_RQST_T.sql
+  VALUES (KREW_ACTN_RQST_S.NEXTVAL,'C',(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'Proposal Person Certification'),'D',-3,'10000000001','U',0,0,(SELECT RTE_NODE_INSTN_ID FROM KREW_RTE_NODE_INSTN_T WHERE DOC_HDR_ID = (SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'Proposal Person Certification')),(SELECT ACTN_TKN_ID FROM KREW_ACTN_TKN_T WHERE DOC_HDR_ID = (SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'Proposal Person Certification') AND ACTN_CD = 'C'),1,TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),'Initiator needs to complete document.',1,'F',1,0)
+                                               *
+ERROR at line 2:
+ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_RQST_T"."DOC_HDR_ID") 
+
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KR_DML_BS7_KRIM_AFLTN_TYP_T.sql
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+SQL> @ORACLE/DML/KR_DML_BS7_KRIM_TYP_T.sql
+
+1 row updated.
+
+
+Commit complete.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> exit

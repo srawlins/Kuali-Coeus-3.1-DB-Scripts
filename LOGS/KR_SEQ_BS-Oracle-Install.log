@@ -1,0 +1,50 @@
+SQL> 
+SQL> declare
+  2  	l_new_seq INTEGER;
+  3  begin
+  4  	select nvl(max(to_number(ROLE_MBR_ID)),'1') + 1 into l_new_seq from KRIM_ROLE_MBR_T where to_number(ROLE_MBR_ID) < 10000;
+  5  	execute immediate 'CREATE SEQUENCE KRIM_ROLE_MBR_ID_BS_S START WITH ' || l_new_seq ||
+  6  		' MAXVALUE 99999999 MINVALUE 1 NOCYCLE NOCACHE NOORDER';
+  7  
+  8  	select nvl(max(to_number(PERM_ID)),'1') + 1 into l_new_seq from KRIM_PERM_T where to_number(PERM_ID) < 10000;
+  9  	execute immediate 'CREATE SEQUENCE KRIM_PERM_ID_BS_S START WITH ' || l_new_seq ||
+ 10  		' MAXVALUE 99999999 MINVALUE 1 NOCYCLE NOCACHE NOORDER';
+ 11  
+ 12  	select nvl(max(to_number(ROLE_PERM_ID)),'1') + 1 into l_new_seq from KRIM_ROLE_PERM_T where to_number(ROLE_PERM_ID) < 10000;
+ 13  	execute immediate 'CREATE SEQUENCE KRIM_ROLE_PERM_ID_BS_S START WITH ' || l_new_seq ||
+ 14  		' MAXVALUE 99999999 MINVALUE 1 NOCYCLE NOCACHE NOORDER';
+ 15  
+ 16  	select nvl(max(to_number(ID)),'1') + 1 into l_new_seq from
+ 17  		((select max(to_number(ATTR_DATA_ID)) as ID from KRIM_RSP_ATTR_DATA_T where to_number(ATTR_DATA_ID) < 10000)
+ 18  		union (select max(to_number(ATTR_DATA_ID)) as ID from KRIM_DLGN_MBR_ATTR_DATA_T where to_number(ATTR_DATA_ID) < 10000)
+ 19  		union (select max(to_number(ATTR_DATA_ID)) as ID from KRIM_ROLE_MBR_ATTR_DATA_T where to_number(ATTR_DATA_ID) < 10000)
+ 20  		union (select max(to_number(ATTR_DATA_ID)) as ID from KRIM_PERM_ATTR_DATA_T where to_number(ATTR_DATA_ID) < 10000));
+ 21  	execute immediate 'CREATE SEQUENCE KRIM_ATTR_DATA_ID_BS_S START WITH ' || l_new_seq ||
+ 22  		' MAXVALUE 99999999 MINVALUE 1 NOCYCLE NOCACHE NOORDER';
+ 23  
+ 24  	select nvl(max(to_number(GRP_ID)),'1') + 1 into l_new_seq from KRIM_GRP_T where to_number(GRP_ID) < 10000;
+ 25      execute immediate 'CREATE SEQUENCE KRIM_GRP_ID_BS_S START WITH ' || l_new_seq ||
+ 26          ' MAXVALUE 99999999 MINVALUE 1 NOCYCLE NOCACHE NOORDER';
+ 27  
+ 28  	select nvl(max(to_number(GRP_MBR_ID)),'1') + 1 into l_new_seq from KRIM_GRP_MBR_T where to_number(GRP_MBR_ID) < 10000;
+ 29  	execute immediate 'CREATE SEQUENCE KRIM_GRP_MBR_ID_BS_S START WITH ' || l_new_seq ||
+ 30  		' MAXVALUE 99999999 MINVALUE 1 NOCYCLE NOCACHE NOORDER';
+ 31  
+ 32  	select nvl(max(to_number(ROLE_RSP_ID)),'1') + 1 into l_new_seq from KRIM_ROLE_RSP_T where to_number(ROLE_RSP_ID) < 10000;
+ 33  	execute immediate 'CREATE SEQUENCE KRIM_ROLE_RSP_ID_BS_S START WITH ' || l_new_seq ||
+ 34  		' MAXVALUE 99999999 MINVALUE 1 NOCYCLE NOCACHE NOORDER';
+ 35  
+ 36  	select nvl(max(to_number(ROLE_ID)),'1') + 1 into l_new_seq from KRIM_ROLE_T where to_number(ROLE_ID) < 10000;
+ 37  	execute immediate 'CREATE SEQUENCE KRIM_ROLE_ID_BS_S START WITH ' || l_new_seq ||
+ 38  		' MAXVALUE 99999999 MINVALUE 1 NOCYCLE NOCACHE NOORDER';
+ 39  
+ 40  	select nvl(max(to_number(ROLE_RSP_ACTN_ID)),'1') + 1 into l_new_seq from KRIM_ROLE_RSP_ACTN_T where to_number(ROLE_RSP_ACTN_ID) < 10000;
+ 41  	execute immediate 'CREATE SEQUENCE KRIM_ROLE_RSP_ACTN_ID_BS_S START WITH ' || l_new_seq ||
+ 42  		' MAXVALUE 99999999 MINVALUE 1 NOCYCLE NOCACHE NOORDER';
+ 43  end;
+ 44  /
+
+PL/SQL procedure successfully completed.
+
+SQL> 
+SQL> 

@@ -1,0 +1,661 @@
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-171-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-172-ALTER TABLE EPS_PROP_EXEMPT_NUMBER
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-173-            *
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:174:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-175-ORA-01758: table must be empty to add mandatory (NOT NULL) column 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-176-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-177-
+--
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-192-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-193-SET PROPOSAL_EXEMPT_NUMBER_ID = SEQ_EPS_PROP_EXEMPT_NUMBER_ID.NEXTVAL
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-194-    *
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:195:ERROR at line 2:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-196-ORA-00904: "PROPOSAL_EXEMPT_NUMBER_ID": invalid identifier 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-197-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-198-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-199-SET (PROPOSAL_SPECIAL_REVIEW_ID) =
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-200-     *
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:201:ERROR at line 2:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-202-ORA-00904: "PROPOSAL_SPECIAL_REVIEW_ID": invalid identifier 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-203-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-204-
+--
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-207-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-208-ALTER TABLE EPS_PROP_SPECIAL_REVIEW
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-209-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:210:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-211-ORA-00955: name is already used by an existing object 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-212-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-213-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-214-ADD CONSTRAINT EPS_PROP_EXEMPT_NUMBERP1 PRIMARY KEY (PROPOSAL_EXEMPT_NUMBER_ID)
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-215-                                                     *
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:216:ERROR at line 2:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-217-ORA-00904: "PROPOSAL_EXEMPT_NUMBER_ID": invalid identifier 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-218-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-219-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-220-ADD CONSTRAINT FK_EPS_PROP_SPECIAL_REVIEW FOREIGN KEY (PROPOSAL_SPECIAL_REVIEW_ID)
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-221-                                                       *
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:222:ERROR at line 2:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-223-ORA-00904: "PROPOSAL_SPECIAL_REVIEW_ID": invalid identifier 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-224-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-225-
+--
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-264-Table altered.
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-265-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-266-SQL> @ORACLE/TABLES/TBL_OBJ_ID_NOT_NULL.sql
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:267:Error: ORA-00942: table or view does not exist trying to modifying table:       
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-268-OSP$AWARD_AMOUNT_INFO                                                           
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:269:Error: ORA-00942: table or view does not exist trying to modifying table:       
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-270-OSP$YNQ_EXPLANATION_TYPE                                                        
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:271:Error: ORA-00942: table or view does not exist trying to modifying table:       
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-272-OSP$UNIT_ADMINISTRATOR_TYPE                                                     
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:273:Error: ORA-04063: view "KRAOWNER.OSP$BUDGET_DETAILS_CAL_AMOUNTS" has errors     
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-274-trying to modifying table: OSP$BUDGET_DETAILS_CAL_AMOUNTS                       
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:275:Error: ORA-00942: table or view does not exist trying to modifying table:       
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-276-OSP$PERSON_EDITABLE_FIELDS                                                      
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-277-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-278-PL/SQL procedure successfully completed.
+--
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-296-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-297-ALTER TABLE "PERSON_EXT_T" MODIFY ( "CITIZENSHIP_TYPE_CODE" NUMBER(15,5) NOT NULL )
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-298-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:299:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-300-ORA-02296: cannot enable (KRAOWNER.) - null values found 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-301-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-302-
+--
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-398-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-399-ALTER TABLE VALID_SP_REV_APPROVAL
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-400-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:401:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-402-ORA-00955: name is already used by an existing object 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-403-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-404-
+--
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1598-SQL> @ORACLE/DML/DML_BS7_VALID_NARR_FORMS.sql
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1599-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',62,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1600-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1601:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1602-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1603-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1604-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1605-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',63,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1606-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1607:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1608-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1609-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1610-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1611-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',64,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1612-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1613:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1614-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1615-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1616-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1617-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',65,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1618-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1619:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1620-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1621-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1622-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1623-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',66,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1624-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1625:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1626-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1627-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1628-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1629-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',75,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1630-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1631:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1632-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1633-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1634-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1635-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',76,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1636-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1637:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1638-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1639-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1640-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1641-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',77,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1642-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1643:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1644-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1645-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1646-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1647-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',78,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1648-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1649:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1650-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1651-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1652-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1653-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',79,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1654-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1655:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1656-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1657-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1658-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1659-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',80,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1660-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1661:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1662-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1663-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1664-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1665-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',81,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1666-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1667:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1668-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1669-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1670-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1671-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',83,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1672-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1673:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1674-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1675-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1676-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1677-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',84,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1678-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1679:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1680-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1681-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1682-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1683-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',85,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1684-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1685:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1686-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1687-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1688-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1689-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',128,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1690-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1691:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1692-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1693-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1694-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1695-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',129,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1696-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1697:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1698-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1699-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1700-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1701-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',67,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1702-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1703:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1704-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1705-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1706-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1707-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',68,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1708-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1709:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1710-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1711-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1712-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1713-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',69,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1714-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1715:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1716-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1717-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1718-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1719-insert into VALID_NARR_FORMS (VALID_NARR_FORMS_ID,FORM_NAME,NARRATIVE_TYPE_CODE,MANDATORY,UPDATE_TIMESTAMP,UPDATE_USER,OBJ_ID) values (SEQ_VALID_NARR_FORMS_ID.nextVal,'PHS398_CareerDevelopmentAwardSup_1_2-V1.2',70,'N',sysdate,'admin',sys_guid())
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1720-*
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1721:ERROR at line 1:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1722-ORA-00001: unique constraint (KRAOWNER.PK_VALID_NARR_FORMS) violated 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1723-
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1724-
+--
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1734-SQL> @ORACLE/CONSTRAINTS/FK_SPECIAL_REVIEW_USAGE.sql
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1735-  ADD CONSTRAINT FK_SPECIAL_REVIEW_CODE FOREIGN KEY (SPECIAL_REVIEW_CODE)
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1736-                 *
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:1737:ERROR at line 2:
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1738-ORA-02298: cannot validate (KRAOWNER.FK_SPECIAL_REVIEW_CODE) - parent keys not 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1739-found 
+LOGS/KC-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-1740-
+--
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1-SQL> @ORACLE/SEQUENCES/KC_SEQ_All.sql
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-2-CREATE SEQUENCE SEQ_PROP_SCIENCE_KEYWORD_ID INCREMENT BY 1 START WITH 1 NOCACHE
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-3-                *
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:4:ERROR at line 1:
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-5-ORA-00955: name is already used by an existing object 
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-6-
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-7-
+--
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-48-SQL> @ORACLE/TABLES/KC_TBL_AWARD_FUNDING_PROPOSALS.sql
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-49-ALTER TABLE AWARD_FUNDING_PROPOSALS MODIFY PROPOSAL_ID NUMBER(12,0)
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-50-                                           *
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:51:ERROR at line 1:
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-52-ORA-01440: column to be modified must be empty to decrease precision or scale 
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-53-
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-54-
+--
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-59-SQL> @ORACLE/TABLES/KC_TBL_BUDGET.sql
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-60-ALTER TABLE BUDGET MODIFY (DOCUMENT_NUMBER VARCHAR2(40))
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-61-                           *
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:62:ERROR at line 1:
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-63-ORA-01439: column to be modified must be empty to change datatype 
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-64-
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-65-
+--
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-122-SQL> @ORACLE/TABLES/KC_TBL_CUSTOM_ATTRIBUTE_DOC_VALUE.sql
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-123-ALTER TABLE CUSTOM_ATTRIBUTE_DOC_VALUE MODIFY (DOCUMENT_NUMBER VARCHAR2(40))
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-124-                                               *
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:125:ERROR at line 1:
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-126-ORA-01439: column to be modified must be empty to change datatype 
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-127-
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-128-
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-129-SQL> @ORACLE/TABLES/KC_TBL_DOCUMENT_NEXTVALUE.sql
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-130-ALTER TABLE DOCUMENT_NEXTVALUE MODIFY (DOCUMENT_NUMBER VARCHAR2(40))
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-131-                                       *
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:132:ERROR at line 1:
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-133-ORA-01439: column to be modified must be empty to change datatype 
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-134-
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-135-
+--
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-139-
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-140-ALTER TABLE EPS_PROPOSAL MODIFY (DOCUMENT_NUMBER VARCHAR2(40))
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-141-                                 *
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:142:ERROR at line 1:
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-143-ORA-01439: column to be modified must be empty to change datatype 
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-144-
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-145-
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-146-ALTER TABLE EPS_PROPOSAL_DOCUMENT MODIFY (DOCUMENT_NUMBER VARCHAR2(40))
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-147-                                          *
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:148:ERROR at line 1:
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-149-ORA-01439: column to be modified must be empty to change datatype 
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-150-
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-151-
+--
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-155-SQL> @ORACLE/TABLES/KC_TBL_EPS_PROPOSAL_BUDGET_EXT.sql
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-156-ALTER TABLE EPS_PROPOSAL_BUDGET_EXT MODIFY (DOCUMENT_NUMBER VARCHAR2(40))
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-157-                                            *
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:158:ERROR at line 1:
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-159-ORA-01439: column to be modified must be empty to change datatype 
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-160-
+LOGS/KC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-161-
+--
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-300-
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-301-ALTER TABLE SPONSOR_FORM_TEMPLATES ADD CONSTRAINT SPONSOR_FORM_TEMPLATESP1 PRIMARY KEY (SPONSOR_FORM_TEMPLATE_ID)
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-302-*
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log:303:ERROR at line 1:
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-304-ORA-00955: name is already used by an existing object 
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-305-
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-306-
+--
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-309-
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-310-ALTER TABLE SPONSOR_FORMS ADD CONSTRAINT SPONSOR_FORMSP1 PRIMARY KEY (SPONSOR_FORM_ID)
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-311-*
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log:312:ERROR at line 1:
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-313-ORA-00955: name is already used by an existing object 
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-314-
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-315-
+--
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-321-
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-322-ALTER TABLE SPONSOR_FORM_TEMPLATES ADD CONSTRAINT FK_SPONSOR_FORM_TEMPLATES FOREIGN KEY (SPONSOR_FORM_ID) REFERENCES SPONSOR_FORMS(SPONSOR_FORM_ID)
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-323-                                                                                                                                   *
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log:324:ERROR at line 1:
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-325-ORA-02270: no matching unique or primary key for this column-list 
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-326-
+LOGS/KC-RELEASE-3_1_SP4-Upgrade-ORACLE-Install.log-327-
+--
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1-SQL> @ORACLE/DML/KRC_DML_BS1_KRNS_DOC_HDR_T.sql
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-2-INSERT INTO KRNS_DOC_HDR_T (DOC_HDR_ID,VER_NBR,FDOC_DESC,ORG_DOC_HDR_ID,TMPL_DOC_HDR_ID,EXPLANATION,OBJ_ID)
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-3-*
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:4:ERROR at line 1:
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-5-ORA-00001: unique constraint (KRAOWNER.KRNS_DOC_HDR_TP1) violated 
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-6-
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-7-
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-8-INSERT INTO KRNS_DOC_HDR_T (DOC_HDR_ID,VER_NBR,FDOC_DESC,ORG_DOC_HDR_ID,TMPL_DOC_HDR_ID,EXPLANATION,OBJ_ID)
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-9-*
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:10:ERROR at line 1:
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-11-ORA-00001: unique constraint (KRAOWNER.KRNS_DOC_HDR_TP1) violated 
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-12-
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-13-
+--
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-16-
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-17-INSERT INTO KRNS_DOC_HDR_T (DOC_HDR_ID,VER_NBR,FDOC_DESC,ORG_DOC_HDR_ID,TMPL_DOC_HDR_ID,EXPLANATION,OBJ_ID)
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-18-*
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:19:ERROR at line 1:
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-20-ORA-00001: unique constraint (KRAOWNER.KRNS_DOC_HDR_TP1) violated 
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-21-
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-22-
+--
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-26-SQL> @ORACLE/DML/KRC_DML_BS2_KRNS_MAINT_DOC_T.sql
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-27-  VALUES ((SELECT DOC_HDR_ID FROM KRNS_DOC_HDR_T WHERE FDOC_DESC = 'Grants.gov Preloaded Questionnaire 2'),0,EMPTY_CLOB(),SYS_GUID())
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-28-                  *
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:29:ERROR at line 2:
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-30-ORA-01400: cannot insert NULL into ("KRAOWNER"."KRNS_MAINT_DOC_T"."DOC_HDR_ID") 
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-31-
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-32-
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-33-DECLARE    data CLOB; buffer VARCHAR2(32000);
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-34-*
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:35:ERROR at line 1:
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-36-ORA-01403: no data found 
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-37-ORA-06512: at line 3 
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-38-
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-39-
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-40-  VALUES ((SELECT DOC_HDR_ID FROM KRNS_DOC_HDR_T WHERE FDOC_DESC = 'Grants.gov Preloaded Questionnaire 1'),0,EMPTY_CLOB(),SYS_GUID())
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-41-                  *
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:42:ERROR at line 2:
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-43-ORA-01400: cannot insert NULL into ("KRAOWNER"."KRNS_MAINT_DOC_T"."DOC_HDR_ID") 
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-44-
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-45-
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-46-DECLARE    data CLOB; buffer VARCHAR2(32000);
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-47-*
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:48:ERROR at line 1:
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-49-ORA-01403: no data found 
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-50-ORA-06512: at line 3 
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-51-
+--
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-58-
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-59-  VALUES ((SELECT DOC_HDR_ID FROM KRNS_DOC_HDR_T WHERE FDOC_DESC = 'Grants.gov Preloaded Questionnaire 4'),0,EMPTY_CLOB(),SYS_GUID())
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-60-                  *
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:61:ERROR at line 2:
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-62-ORA-01400: cannot insert NULL into ("KRAOWNER"."KRNS_MAINT_DOC_T"."DOC_HDR_ID") 
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-63-
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-64-
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-65-DECLARE    data CLOB; buffer VARCHAR2(32000);
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-66-*
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:67:ERROR at line 1:
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-68-ORA-01403: no data found 
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-69-ORA-06512: at line 3 
+LOGS/KRC-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-70-
+--
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-1-SQL> @ORACLE/DML/KRC_DML_BS1_KRNS_DOC_HDR_T.sql
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-2-INSERT INTO KRNS_DOC_HDR_T (DOC_HDR_ID,VER_NBR,FDOC_DESC,ORG_DOC_HDR_ID,TMPL_DOC_HDR_ID,EXPLANATION,OBJ_ID)
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-3-*
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log:4:ERROR at line 1:
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-5-ORA-00001: unique constraint (KRAOWNER.KRNS_DOC_HDR_TP1) violated 
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-6-
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-7-
+--
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-11-SQL> @ORACLE/DML/KRC_DML_BS2_KRNS_MAINT_DOC_T.sql
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-12-  VALUES ((SELECT DOC_HDR_ID FROM KRNS_DOC_HDR_T WHERE FDOC_DESC = 'Proposal Person Preloaded Questionnaire'),0,EMPTY_CLOB(),SYS_GUID())
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-13-                  *
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log:14:ERROR at line 2:
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-15-ORA-01400: cannot insert NULL into ("KRAOWNER"."KRNS_MAINT_DOC_T"."DOC_HDR_ID") 
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-16-
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-17-
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-18-DECLARE    data CLOB; buffer VARCHAR2(32000);
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-19-*
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log:20:ERROR at line 1:
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-21-ORA-01403: no data found 
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-22-ORA-06512: at line 3 
+LOGS/KRC-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-23-
+--
+LOGS/KR-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-211-
+LOGS/KR-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-212-    (select PERM_ID from KRIM_PERM_T where NM='Modify Entity' and nmspc_cd = 'KR-SYS'), 'Y')
+LOGS/KR-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-213-     *
+LOGS/KR-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log:214:ERROR at line 3:
+LOGS/KR-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-215-ORA-01427: single-row subquery returns more than one row 
+LOGS/KR-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-216-
+LOGS/KR-Release-3_0_1-3_1_S1-Upgrade-Oracle-Install.log-217-
+--
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-22-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-23-UPDATE KRIM_ROLE_MBR_T SET ROLE_MBR_ID = KRIM_ROLE_MBR_ID_BS_S.NEXTVAL WHERE ROLE_MBR_ID = (SELECT ROLE_MBR_ID FROM KRIM_ROLE_MBR_T WHERE ROLE_ID = (SELECT ROLE_ID FROM KRIM_ROLE_T WHERE ROLE_NM = 'IRBApprover' AND NMSPC_CD = 'KC-WKFLW') AND MBR_ID = (SELECT ROLE_ID FROM KRIM_ROLE_T WHERE ROLE_NM = 'ProtocolApprover' AND NMSPC_CD = 'KC-PROTOCOL'))
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-24-*
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:25:ERROR at line 1:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-26-ORA-00001: unique constraint (KRAOWNER.KRIM_ROLE_MBR_TP1) violated 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-27-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-28-
+--
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-34-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-35-UPDATE KRIM_ROLE_MBR_T SET ROLE_MBR_ID = KRIM_ROLE_MBR_ID_BS_S.NEXTVAL WHERE ROLE_MBR_ID = (SELECT ROLE_MBR_ID FROM KRIM_ROLE_MBR_T WHERE ROLE_ID = (SELECT ROLE_ID FROM KRIM_ROLE_T WHERE ROLE_NM = 'IRBApprover' AND NMSPC_CD = 'KC-WKFLW') AND MBR_ID = (SELECT ROLE_ID FROM KRIM_ROLE_T WHERE ROLE_NM = 'IRB Administrator' AND NMSPC_CD = 'KC-UNT'))
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-36-*
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:37:ERROR at line 1:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-38-ORA-00001: unique constraint (KRAOWNER.KRIM_ROLE_MBR_TP1) violated 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-39-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-40-
+--
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-656-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-657-UPDATE KRIM_ROLE_PERM_T SET ROLE_PERM_ID = KRIM_ROLE_PERM_ID_BS_S.NEXTVAL WHERE ROLE_PERM_ID = ( SELECT ROLE_PERM_ID FROM KRIM_ROLE_PERM_T WHERE ROLE_ID = (SELECT ROLE_ID FROM KRIM_ROLE_T WHERE ROLE_NM = 'Unit Administrator' AND NMSPC_CD = 'KC-WKFLW') AND PERM_ID = (SELECT PERM_ID FROM KRIM_PERM_T WHERE NM = 'Open Institutional Proposal' AND NMSPC_CD = 'KC-IP'))
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-658-                                                                                                 *
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:659:ERROR at line 1:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-660-ORA-01427: single-row subquery returns more than one row 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-661-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-662-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-663-UPDATE KRIM_ROLE_PERM_T SET ROLE_PERM_ID = KRIM_ROLE_PERM_ID_BS_S.NEXTVAL WHERE ROLE_PERM_ID = ( SELECT ROLE_PERM_ID FROM KRIM_ROLE_PERM_T WHERE ROLE_ID = (SELECT ROLE_ID FROM KRIM_ROLE_T WHERE ROLE_NM = 'Unit Administrator' AND NMSPC_CD = 'KC-WKFLW') AND PERM_ID = (SELECT PERM_ID FROM KRIM_PERM_T WHERE NM = 'Open Institutional Proposal' AND NMSPC_CD = 'KC-IP'))
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-664-                                                                                                 *
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:665:ERROR at line 1:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-666-ORA-01427: single-row subquery returns more than one row 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-667-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-668-
+--
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1071-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1072-insert into krim_perm_t values (KRIM_PERM_ID_BS_S.nextval, sys_guid(), 1, '10008', 'KC-T', 'View Time And Money Document', 'View a Time and Money Document', 'Y')
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1073-*
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1074:ERROR at line 1:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1075-ORA-02291: integrity constraint (KRAOWNER.KRIM_PERM_TR1) violated - parent key 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1076-not found 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1077-
+--
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1154-SQL> @ORACLE/DML/KR_DML_BS7_KREW_DOC_HDR_T.sql
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1155-INSERT INTO KREW_DOC_HDR_T (DOC_HDR_ID,DOC_TYP_ID,DOC_HDR_STAT_CD,RTE_LVL,STAT_MDFN_DT,CRTE_DT,APRV_DT,FNL_DT,RTE_STAT_MDFN_DT,TTL,DOC_VER_NBR,INITR_PRNCPL_ID,VER_NBR,RTE_PRNCPL_ID,OBJ_ID)
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1156-*
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1157:ERROR at line 1:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1158-ORA-00001: unique constraint (KRAOWNER.KREW_DOC_HDR_TP1) violated 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1159-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1160-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1161-INSERT INTO KREW_DOC_HDR_T (DOC_HDR_ID,DOC_TYP_ID,DOC_HDR_STAT_CD,RTE_LVL,STAT_MDFN_DT,CRTE_DT,APRV_DT,FNL_DT,RTE_STAT_MDFN_DT,TTL,DOC_VER_NBR,INITR_PRNCPL_ID,VER_NBR,RTE_PRNCPL_ID,OBJ_ID)
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1162-*
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1163:ERROR at line 1:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1164-ORA-00001: unique constraint (KRAOWNER.KREW_DOC_HDR_TP1) violated 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1165-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1166-
+--
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1169-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1170-INSERT INTO KREW_DOC_HDR_T (DOC_HDR_ID,DOC_TYP_ID,DOC_HDR_STAT_CD,RTE_LVL,STAT_MDFN_DT,CRTE_DT,APRV_DT,FNL_DT,RTE_STAT_MDFN_DT,TTL,DOC_VER_NBR,INITR_PRNCPL_ID,VER_NBR,RTE_PRNCPL_ID,OBJ_ID)
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1171-*
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1172:ERROR at line 1:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1173-ORA-00001: unique constraint (KRAOWNER.KREW_DOC_HDR_TP1) violated 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1174-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1175-
+--
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1210-SQL> @ORACLE/DML/KR_DML_BS8_KREW_ACTN_TKN_T.sql
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1211-  VALUES (KREW_ACTN_TKN_S.NEXTVAL,(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'NSF s2s form supporting questions'),'10000000001','S',TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),1,1,1)
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1212-                                          *
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1213:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1214-ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_TKN_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1215-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1216-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1217-  VALUES (KREW_ACTN_TKN_S.NEXTVAL,(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'NSF s2s form supporting questions'),'10000000001','C',TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),1,1,1)
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1218-                                          *
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1219:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1220-ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_TKN_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1221-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1222-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1223-  VALUES (KREW_ACTN_TKN_S.NEXTVAL,(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-0 & 1-1'),'10000000001','S',TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),1,1,1)
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1224-                                          *
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1225:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1226-ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_TKN_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1227-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1228-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1229-  VALUES (KREW_ACTN_TKN_S.NEXTVAL,(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-0 & 1-1'),'10000000001','C',TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),1,1,1)
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1230-                                          *
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1231:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1232-ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_TKN_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1233-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1234-
+--
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1240-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1241-  VALUES (KREW_ACTN_TKN_S.NEXTVAL,(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-2'),'10000000001','S',TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),1,1,1)
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1242-                                          *
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1243:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1244-ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_TKN_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1245-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1246-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1247-  VALUES (KREW_ACTN_TKN_S.NEXTVAL,(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-2'),'10000000001','C',TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),1,1,1)
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1248-                                          *
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1249:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1250-ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_TKN_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1251-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1252-
+--
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1256-SQL> @ORACLE/DML/KR_DML_BS8_KREW_DOC_HDR_CNTNT_T.sql
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1257-  VALUES (EMPTY_CLOB(),(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'NSF s2s form supporting questions'))
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1258-                               *
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1259:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1260-ORA-01400: cannot insert NULL into 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1261-("KRAOWNER"."KREW_DOC_HDR_CNTNT_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1262-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1263-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1264-DECLARE    data CLOB; buffer VARCHAR2(32000);
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1265-*
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1266:ERROR at line 1:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1267-ORA-01403: no data found 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1268-ORA-06512: at line 3 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1269-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1270-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1271-  VALUES (EMPTY_CLOB(),(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-0 & 1-1'))
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1272-                               *
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1273:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1274-ORA-01400: cannot insert NULL into 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1275-("KRAOWNER"."KREW_DOC_HDR_CNTNT_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1276-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1277-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1278-DECLARE    data CLOB; buffer VARCHAR2(32000);
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1279-*
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1280:ERROR at line 1:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1281-ORA-01403: no data found 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1282-ORA-06512: at line 3 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1283-
+--
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1290-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1291-  VALUES (EMPTY_CLOB(),(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-2'))
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1292-                               *
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1293:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1294-ORA-01400: cannot insert NULL into 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1295-("KRAOWNER"."KREW_DOC_HDR_CNTNT_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1296-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1297-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1298-DECLARE    data CLOB; buffer VARCHAR2(32000);
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1299-*
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1300:ERROR at line 1:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1301-ORA-01403: no data found 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1302-ORA-06512: at line 3 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1303-
+--
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1305-SQL> @ORACLE/DML/KR_DML_BS8_KREW_RTE_NODE_INSTN_T.sql
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1306-DECLARE brch_id NUMBER;
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1307-*
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1308:ERROR at line 1:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1309-ORA-01400: cannot insert NULL into 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1310-("KRAOWNER"."KREW_RTE_NODE_INSTN_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1311-ORA-06512: at line 6 
+--
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1313-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1314-  VALUES ((SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'NSF s2s form supporting questions'),KREW_RTE_NODE_S.CURRVAL)
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1315-                  *
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1316:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1317-ORA-01400: cannot insert NULL into 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1318-("KRAOWNER"."KREW_INIT_RTE_NODE_INSTN_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1319-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1320-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1321-DECLARE brch_id NUMBER;
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1322-*
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1323:ERROR at line 1:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1324-ORA-01400: cannot insert NULL into 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1325-("KRAOWNER"."KREW_RTE_NODE_INSTN_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1326-ORA-06512: at line 6 
+--
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1328-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1329-  VALUES ((SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-0 & 1-1'),KREW_RTE_NODE_S.CURRVAL)
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1330-                  *
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1331:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1332-ORA-01400: cannot insert NULL into 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1333-("KRAOWNER"."KREW_INIT_RTE_NODE_INSTN_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1334-
+--
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1341-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1342-DECLARE brch_id NUMBER;
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1343-*
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1344:ERROR at line 1:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1345-ORA-01400: cannot insert NULL into 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1346-("KRAOWNER"."KREW_RTE_NODE_INSTN_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1347-ORA-06512: at line 6 
+--
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1349-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1350-  VALUES ((SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-2'),KREW_RTE_NODE_S.CURRVAL)
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1351-                  *
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1352:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1353-ORA-01400: cannot insert NULL into 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1354-("KRAOWNER"."KREW_INIT_RTE_NODE_INSTN_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1355-
+--
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1360-SQL> @ORACLE/DML/KR_DML_BS9_KREW_ACTN_RQST_T.sql
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1361-  VALUES (KREW_ACTN_RQST_S.NEXTVAL,'C',(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'NSF s2s form supporting questions'),'D',-3,'10000000001','U',0,0,(SELECT RTE_NODE_INSTN_ID FROM KREW_RTE_NODE_INSTN_T WHERE DOC_HDR_ID = (SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'NSF s2s form supporting questions')),(SELECT ACTN_TKN_ID FROM KREW_ACTN_TKN_T WHERE DOC_HDR_ID = (SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'NSF s2s form supporting questions') AND ACTN_CD = 'C'),1,TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),'Initiator needs to complete document.',1,'F',1,0)
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1362-                                               *
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1363:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1364-ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_RQST_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1365-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1366-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1367-  VALUES (KREW_ACTN_RQST_S.NEXTVAL,'C',(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-0 & 1-1'),'D',-3,'10000000001','U',0,0,(SELECT RTE_NODE_INSTN_ID FROM KREW_RTE_NODE_INSTN_T WHERE DOC_HDR_ID = (SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-0 & 1-1')),(SELECT ACTN_TKN_ID FROM KREW_ACTN_TKN_T WHERE DOC_HDR_ID = (SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-0 & 1-1') AND ACTN_CD = 'C'),1,TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),'Initiator needs to complete document.',1,'F',1,0)
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1368-                                               *
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1369:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1370-ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_RQST_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1371-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1372-
+--
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1375-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1376-  VALUES (KREW_ACTN_RQST_S.NEXTVAL,'C',(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-2'),'D',-3,'10000000001','U',0,0,(SELECT RTE_NODE_INSTN_ID FROM KREW_RTE_NODE_INSTN_T WHERE DOC_HDR_ID = (SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-2')),(SELECT ACTN_TKN_ID FROM KREW_ACTN_TKN_T WHERE DOC_HDR_ID = (SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'PHS Fellowship Supplemental Form V1-2') AND ACTN_CD = 'C'),1,TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),'Initiator needs to complete document.',1,'F',1,0)
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1377-                                               *
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log:1378:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1379-ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_RQST_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1380-
+LOGS/KR-RELEASE-3_1_SP2-Upgrade-ORACLE-Install.log-1381-
+--
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-70-SQL> @ORACLE/DML/KR_DML_BS5_KREW_DOC_HDR_T.sql
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-71-INSERT INTO KREW_DOC_HDR_T (DOC_HDR_ID,DOC_TYP_ID,DOC_HDR_STAT_CD,RTE_LVL,STAT_MDFN_DT,CRTE_DT,APRV_DT,FNL_DT,RTE_STAT_MDFN_DT,TTL,DOC_VER_NBR,INITR_PRNCPL_ID,VER_NBR,RTE_PRNCPL_ID,OBJ_ID)
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-72-*
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log:73:ERROR at line 1:
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-74-ORA-00001: unique constraint (KRAOWNER.KREW_DOC_HDR_TP1) violated 
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-75-
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-76-
+--
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-93-SQL> @ORACLE/DML/KR_DML_BS6_KREW_ACTN_TKN_T.sql
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-94-  VALUES (KREW_ACTN_TKN_S.NEXTVAL,(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'Proposal Person Certification'),'10000000001','S',TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),1,1,1)
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-95-                                          *
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log:96:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-97-ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_TKN_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-98-
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-99-
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-100-  VALUES (KREW_ACTN_TKN_S.NEXTVAL,(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'Proposal Person Certification'),'10000000001','C',TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),1,1,1)
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-101-                                          *
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log:102:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-103-ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_TKN_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-104-
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-105-
+--
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-109-SQL> @ORACLE/DML/KR_DML_BS6_KREW_DOC_HDR_CNTNT_T.sql
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-110-  VALUES (EMPTY_CLOB(),(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'Proposal Person Certification'))
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-111-                               *
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log:112:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-113-ORA-01400: cannot insert NULL into 
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-114-("KRAOWNER"."KREW_DOC_HDR_CNTNT_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-115-
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-116-
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-117-DECLARE    data CLOB; buffer VARCHAR2(32000);
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-118-*
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log:119:ERROR at line 1:
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-120-ORA-01403: no data found 
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-121-ORA-06512: at line 3 
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-122-
+--
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-127-SQL> @ORACLE/DML/KR_DML_BS6_KREW_RTE_NODE_INSTN_T.sql
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-128-DECLARE brch_id NUMBER;
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-129-*
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log:130:ERROR at line 1:
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-131-ORA-01400: cannot insert NULL into 
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-132-("KRAOWNER"."KREW_RTE_NODE_INSTN_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-133-ORA-06512: at line 6 
+--
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-135-
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-136-  VALUES ((SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'Proposal Person Certification'),KREW_RTE_NODE_S.CURRVAL)
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-137-                  *
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log:138:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-139-ORA-01400: cannot insert NULL into 
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-140-("KRAOWNER"."KREW_INIT_RTE_NODE_INSTN_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-141-
+--
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-150-SQL> @ORACLE/DML/KR_DML_BS7_KREW_ACTN_RQST_T.sql
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-151-  VALUES (KREW_ACTN_RQST_S.NEXTVAL,'C',(SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'Proposal Person Certification'),'D',-3,'10000000001','U',0,0,(SELECT RTE_NODE_INSTN_ID FROM KREW_RTE_NODE_INSTN_T WHERE DOC_HDR_ID = (SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'Proposal Person Certification')),(SELECT ACTN_TKN_ID FROM KREW_ACTN_TKN_T WHERE DOC_HDR_ID = (SELECT DOC_HDR_ID FROM KREW_DOC_HDR_T WHERE TTL = 'Proposal Person Certification') AND ACTN_CD = 'C'),1,TO_TIMESTAMP('08-JUL-10','DD-MON-RR HH.MI.SSXFF AM'),'Initiator needs to complete document.',1,'F',1,0)
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-152-                                               *
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log:153:ERROR at line 2:
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-154-ORA-01400: cannot insert NULL into ("KRAOWNER"."KREW_ACTN_RQST_T"."DOC_HDR_ID") 
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-155-
+LOGS/KR-RELEASE-3_1_SP3-Upgrade-ORACLE-Install.log-156-

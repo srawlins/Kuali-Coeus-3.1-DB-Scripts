@@ -1,0 +1,1473 @@
+SQL> @ORACLE/SEQUENCES/KC_SEQ_All.sql
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+SQL> @ORACLE/TABLES/KC_TBL_AWARD_BUDGET_LIMIT.sql
+
+Table created.
+
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_AWARD_BUDGET_PERIOD_EXT.sql
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_AWARD_TEMPLATE_REPORT_TERMS.sql
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_AWD_BGT_PER_SUM_CALC_AMT.sql
+
+Table created.
+
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_BUDGET_DOCUMENT.sql
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_COST_ELEMENT.sql
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_EPS_PROP_YNQ.sql
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_NOTIFICATION_TYPE.sql
+
+Table created.
+
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_NOTIFICATION_TYPE_RECIPIENT.sql
+
+Table created.
+
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_PENDING_TRANSACTIONS.sql
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_PERSON_EDITABLE_FIELDS.sql
+
+Table created.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table altered.
+
+
+27 rows created.
+
+
+27 rows created.
+
+
+Commit complete.
+
+
+Table dropped.
+
+SQL> @ORACLE/TABLES/KC_TBL_PROPOSAL_DOCUMENT.sql
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_PROPOSAL_LOG.sql
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_PROTOCOL_ATTACHMENT_PERSONNEL.sql
+
+0 rows updated.
+
+
+Commit complete.
+
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_PROTOCOL_ATTACHMENT_PROTOCOL.sql
+
+0 rows updated.
+
+
+Commit complete.
+
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_PROTOCOL_ONLN_RVWS.sql
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_PROTOCOL_PERSONS.sql
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_ROLODEX.sql
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_SPECIAL_REVIEW.sql
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_WATERMARK.sql
+
+Table created.
+
+
+Table altered.
+
+
+Table altered.
+
+SQL> @ORACLE/TABLES/KC_TBL_YNQ.sql
+
+Table altered.
+
+SQL> @ORACLE/DML/KC_DML_BS1_ARG_VALUE_LOOKUP.sql
+
+37 rows deleted.
+
+
+0 rows deleted.
+
+
+0 rows deleted.
+
+
+4 rows deleted.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KC_DML_BS1_COST_ELEMENT.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KC_DML_BS1_MINUTE_ENTRY_CODE.sql
+
+1 row created.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KC_DML_BS1_NARRATIVE_TYPE.sql
+
+1 row updated.
+
+SQL> @ORACLE/DML/KC_DML_BS1_PROTOCOL_ACTION_TYPE.sql
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KC_DML_BS1_QUESTION.sql
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+Commit complete.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @ORACLE/DML/KC_DML_BS1_QUESTIONNAIRE.sql
+
+1 row created.
+
+
+1 row updated.
+
+SQL> @ORACLE/DML/KC_DML_BS1_SPECIAL_REVIEW.sql
+
+1 row updated.
+
+
+1 row updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KC_DML_BS1_TRAINING_STIPEND_RATES.SQL
+
+29 rows deleted.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @ORACLE/DML/KC_DML_BS1_YNQ.sql
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+Commit complete.
+
+SQL> @ORACLE/DML/KC_DML_BS2_QUESTIONNAIRE_QUESTIONS.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row updated.
+
+
+1 row created.
+
+SQL> @ORACLE/DML/KC_DML_BS2_QUESTIONNAIRE_USAGE.sql
+
+1 row created.
+
+SQL> @ORACLE/DML/KC_DML_BS2_QUESTION_EXPLANATION.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @ORACLE/CONSTRAINTS/KC_FK_AWARD_BUDGET_LIMIT.sql
+
+Table altered.
+
+
+Table altered.
+
+SQL> @ORACLE/CONSTRAINTS/KC_FK_AWD_BUDGET_PER_SUM_CALC_AMT.sql
+
+Table altered.
+
+
+Table altered.
+
+SQL> @ORACLE/CONSTRAINTS/KC_FK_NOTIFICATION_TYPE.sql
+
+Table altered.
+
+SQL> @ORACLE/CONSTRAINTS/KC_FK_NOTIFICATION_TYPE_RECIPIENT.sql
+
+Table altered.
+
+SQL> @ORACLE/CONSTRAINTS/KC_UQ_AWD_BUDGET_PER_SUM_CALC_AMT.sql
+
+Table altered.
+
+SQL> @ORACLE/CONSTRAINTS/KC_UQ_NOTIFICATION_TYPE.sql
+
+Index created.
+
+SQL> @ORACLE/VIEWS/KC_VEW_NOTIFICATION_TYPE.sql
+
+View created.
+
+SQL> @ORACLE/VIEWS/KC_VEW_NOTIFICATION_TYPE_RECIPIENT.sql
+
+View created.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> exit
