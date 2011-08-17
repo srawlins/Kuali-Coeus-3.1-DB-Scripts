@@ -35,22 +35,42 @@ getAnswer() {
 	done
 	echo "${answer}"
 	echo 1>&2
-	}	
+	}
 
-mode=`getChoice 'Enter Rice Mode' BUNDLE EMBED`
+if [ -n "$mode" ]; then
+  printf "Using %20s: %-10s  (\$mode)\n" "Rice Mode" "$mode"
+else
+  mode=`getChoice 'Enter Rice Mode' BUNDLE EMBED`
+fi
 
 if [ "${mode}" = "EMBED" ]
 then
 	InstRice=`getChoice 'Install/Upgrade Embedded Rice Server Side' Y N`
 fi
 
-dbtype=`getChoice 'Enter Database Type' ORACLE MYSQL`
+if [ -n "$dbtype" ]; then
+  printf "Using %20s: %-10s  (\$dbtype)\n" "Database Type" "$dbtype"
+else
+  dbtype=`getChoice 'Enter Database Type' ORACLE MYSQL`
+fi
 
-version=`getChoice 'Enter Version' NEW 3.0 3.0.1`
+if [ -n "$version" ]; then
+  printf "Using %20s: %-10s  (\$version)\n" "Current Version" "$version"
+else
+  version=`getChoice 'Enter Version' NEW 3.0 3.0.1`
+fi
 
-un=`getAnswer 'Enter KC Database Username'`
+if [ -n "$un" ]; then
+  printf "Using %20s: %-10s  (\$un)\n" "KC Database Username" "$un"
+else
+  un=`getAnswer 'Enter KC Database Username'`
+fi
 
-pw=`getAnswer 'Enter KC Database Password'`
+if [ -n "$pw" ]; then
+  printf "Using %20s: %-10s  (\$pw)\n" "KC Database Password" "$pw"
+else
+  pw=`getAnswer 'Enter KC Database Password'`
+fi
 
 if [ "${dbtype}" = "ORACLE" ]
 then
